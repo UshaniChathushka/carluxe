@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/home"
+        android:title="" /> <!-- Remove the space between the quotes for an empty title -->
+    <item
+        android:id="@+id/navigation_cart"
+        android:icon="@drawable/cart"
+        android:title="" /> <!-- Remove the space between the quotes for an empty title -->
+    <item
+        android:id="@+id/navigation_chart"
+        android:icon="@drawable/chart"
+        android:title="" /> <!-- Remove the space between the quotes for an empty title -->
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/profile"
+        android:title="" /> <!-- Remove the space between the quotes for an empty title -->
+</menu>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rectangle_2"
+        android:layout_width="350dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rectangle_10"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rectangle_1">
+
+        <!-- Car Image -->
+        <ImageView
+            android:id="@+id/car_img_1"
+            android:layout_width="164dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/toyotared"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.017"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Car Name -->
+        <TextView
+            android:id="@+id/car_name_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:fontFamily="@font/nunitosansbold"
+            android:text="2019 Toyota 86"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.86"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Car Price -->
+        <TextView
+            android:id="@+id/car_price_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/nunitosansbold"
+            android:text="LKR 9,926,800"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.811"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/car_name_1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/nunitosansbold"
+        android:text="My Profile"
+        android:textColor="@android:color/white"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/nunitosansregular"
+        android:text="My Cart"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textMain" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rectangle"
+        android:layout_width="179dp"
+        android:layout_height="169dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/green"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textBook">
+
+        <!-- Date -->
+
+        <!-- Car Details -->
+
+        <TextView
+            android:id="@+id/textDate"
+            android:layout_width="137dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/nunitosansbold"
+            android:text="20th Oct 2024"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.126" />
+
+        <TextView
+            android:id="@+id/textCarDetails"
+            android:layout_width="142dp"
+            android:layout_height="62dp"
+            android:fontFamily="@font/nunitosansbold"
+            android:text="2019 Toyota 86 - Red"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.432"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.943" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rectangle_1"
+        android:layout_width="350dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="128dp"
+        android:background="@drawable/rectangle_10"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Car Image -->
+        <ImageView
+            android:id="@+id/car_img_2"
+            android:layout_width="164dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/toyotawhite"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.017"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Car Name -->
+        <TextView
+            android:id="@+id/car_name_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:fontFamily="@font/nunitosansbold"
+            android:text="2019 Toyota 86"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.86"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Car Price -->
+        <TextView
+            android:id="@+id/car_price_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/nunitosansbold"
+            android:text="LKR 9,926,800"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.811"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/car_name_2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/nunitosansregular"
+        android:text="Booked test drive list"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.123"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rectangle_2" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        style="@style/CustomBottomNavigationView"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@color/green"
+        app:itemIconTint="@drawable/bottom_nav_color"
+        app:itemTextColor="@drawable/bottom_nav_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

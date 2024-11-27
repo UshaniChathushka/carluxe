@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomBottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView.Colored">
+        <item name="itemIconSize">23dp</item> <!-- Adjust icon size as needed -->
+        <item name="itemPaddingTop">8dp</item> <!-- Add padding to center icons vertically -->
+        <item name="itemPaddingBottom">0dp</item>
+    </style>
+    <style name="popular_car">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="select_your">
+        <item name="android:textSize">32sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="CarBrand">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">7dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:background">@drawable/car_brand_background</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="ModelYear">
+        <item name="android:background">@drawable/green_border</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="cars_availa">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:fontFamily">@font/nunitosansregular</item> <!-- Assuming you have defined this font -->
+    </style>
+
+</resources>

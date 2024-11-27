@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".SelectCarActivity">
+
+    <TextView
+        android:id="@+id/select_your"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/nunitosansregular"
+        android:gravity="top"
+        android:text="@string/select_your"
+        android:textAppearance="@style/select_your"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/car_brand_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Car brand"
+        android:textSize="18sp"
+        android:textAppearance="@style/select_your"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/select_your" />
+
+    <LinearLayout
+        android:id="@+id/car_brand_container_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/car_brand_label">
+
+        <TextView
+            android:id="@+id/bmw"
+            style="@style/CarBrand"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:text="BMW" />
+
+        <TextView
+            android:id="@+id/toyota"
+            style="@style/CarBrand"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:text="TOYOTA" />
+
+        <TextView
+            android:id="@+id/honda"
+            style="@style/CarBrand"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:text="HONDA" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/car_brand_container_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/car_brand_container_1">
+
+        <TextView
+            android:id="@+id/suzuki"
+            style="@style/CarBrand"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:text="SUZUKI" />
+
+        <TextView
+            android:id="@+id/benz"
+            style="@style/CarBrand"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:text="BENZ" />
+
+        <TextView
+            android:id="@+id/audi"
+            style="@style/CarBrand"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:text="AUDI" />
+
+    </LinearLayout>
+
+    <!-- New section for car colors -->
+    <TextView
+        android:id="@+id/car_color_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Car color"
+        android:textSize="18sp"
+        android:textAppearance="@style/select_your"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/car_brand_container_2" />
+
+    <LinearLayout
+        android:id="@+id/car_color_container_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/car_color_label">
+
+        <TextView
+            android:id="@+id/white_color"
+            style="@style/CarBrand"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:text="WHITE" />
+
+        <TextView
+            android:id="@+id/black_color"
+            style="@style/CarBrand"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:text="BLACK" />
+
+        <TextView
+            android:id="@+id/red_color"
+            style="@style/CarBrand"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:text="RED" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/car_color_container_2"
+        android:layout_width="232dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/car_color_container_1">
+
+        <TextView
+            android:id="@+id/blue_color"
+            style="@style/CarBrand"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="BLUE" />
+
+        <TextView
+            android:id="@+id/yellow_color"
+            style="@style/CarBrand"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:text="YELLOW" />
+
+    </LinearLayout>
+
+    <!-- New section for model year -->
+    <TextView
+        android:id="@+id/model_year_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Model Year"
+        android:textSize="18sp"
+        android:textAppearance="@style/select_your"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/car_color_container_2" />
+
+    <LinearLayout
+        android:id="@+id/model_year_container_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/model_year_label">
+
+        <TextView
+            android:id="@+id/year_2014"
+            style="@style/ModelYear"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="12dp"
+            android:text="2014" />
+
+        <TextView
+            android:id="@+id/year_2015"
+            style="@style/ModelYear"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="12dp"
+            android:text="2015" />
+
+        <TextView
+            android:id="@+id/year_2016"
+            style="@style/ModelYear"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="12dp"
+            android:text="2016" />
+
+        <TextView
+            android:id="@+id/year_2017"
+            style="@style/ModelYear"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:text="2017" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/model_year_container_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/model_year_container_1">
+
+        <TextView
+            android:id="@+id/year_2018"
+            style="@style/ModelYear"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="12dp"
+            android:text="2018" />
+
+        <TextView
+            android:id="@+id/year_2019"
+            style="@style/ModelYear"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="12dp"
+            android:text="2019" />
+
+        <TextView
+            android:id="@+id/year_2020"
+            style="@style/ModelYear"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:text="2020" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

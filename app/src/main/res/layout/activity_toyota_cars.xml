@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".ToyotaCarsActivity">
+
+    <!-- Rectangle 1 -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rectangle_1"
+        android:layout_width="150dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rectangle_9"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Car Image -->
+        <ImageView
+            android:id="@+id/car_img_1"
+            android:layout_width="164dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/toyotawhite"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Car Name -->
+        <TextView
+            android:id="@+id/car_name_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/nunitosansbold"
+            android:text="2019 Toyota 86"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/car_img_1" />
+
+        <!-- Car Price -->
+        <TextView
+            android:id="@+id/car_price_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="LKR 9,926,800"
+            android:textColor="@color/green"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.225"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/car_name_1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Rectangle 2 -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rectangle_2"
+        android:layout_width="150dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rectangle_9"
+        app:layout_constraintStart_toEndOf="@id/rectangle_1"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Car Image -->
+        <ImageView
+            android:id="@+id/car_img_2"
+            android:layout_width="164dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/toyotawhite"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Car Name -->
+        <TextView
+            android:id="@+id/car_name_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/nunitosansbold"
+            android:text="2019 Toyota 86"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/car_img_2" />
+
+        <!-- Car Price -->
+        <TextView
+            android:id="@+id/car_price_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="LKR 9,926,800"
+            android:textColor="@color/green"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.225"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/car_name_2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Rectangle 3 -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rectangle_3"
+        android:layout_width="150dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/rectangle_9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rectangle_1">
+
+        <!-- Car Image -->
+        <ImageView
+            android:id="@+id/car_img_3"
+            android:layout_width="164dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/toyotared"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Car Name -->
+        <TextView
+            android:id="@+id/car_name_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/nunitosansbold"
+            android:text="2019 Toyota 86"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/car_img_3" />
+
+        <!-- Car Price -->
+        <TextView
+            android:id="@+id/car_price_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="LKR 9,926,800"
+            android:textColor="@color/green"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.225"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/car_name_3" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Rectangle 4 -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rectangle_4"
+        android:layout_width="150dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/rectangle_9"
+        app:layout_constraintStart_toEndOf="@id/rectangle_3"
+        app:layout_constraintTop_toBottomOf="@id/rectangle_2">
+
+        <!-- Car Image -->
+        <ImageView
+            android:id="@+id/car_img_4"
+            android:layout_width="164dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/toyotacorolla"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Car Name -->
+        <TextView
+            android:id="@+id/car_name_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/nunitosansbold"
+            android:text="Toyota Corolla"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/car_img_4" />
+
+        <!-- Car Price -->
+        <TextView
+            android:id="@+id/car_price_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="LKR 8,970,000"
+            android:textColor="@color/green"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.225"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/car_name_4" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Rectangle 5 -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rectangle_5"
+        android:layout_width="150dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/rectangle_9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rectangle_3">
+
+        <!-- Car Image -->
+        <ImageView
+            android:id="@+id/car_img_5"
+            android:layout_width="164dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/toyotaaqua"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Car Name -->
+        <TextView
+            android:id="@+id/car_name_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/nunitosansbold"
+            android:text="Toyota Aqua"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/car_img_5" />
+
+        <!-- Car Price -->
+        <TextView
+            android:id="@+id/car_price_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="LKR 5,775,000"
+            android:textColor="@color/green"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.225"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/car_name_5" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Rectangle 6 -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rectangle_6"
+        android:layout_width="150dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/rectangle_9"
+        app:layout_constraintStart_toEndOf="@id/rectangle_5"
+        app:layout_constraintTop_toBottomOf="@id/rectangle_4">
+
+        <!-- Car Image -->
+        <ImageView
+            android:id="@+id/car_img_6"
+            android:layout_width="164dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/toyotaavalon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Car Name -->
+        <TextView
+            android:id="@+id/car_name_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/nunitosansbold"
+            android:text="Toyota Avalon"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/car_img_6" />
+
+        <!-- Car Price -->
+        <TextView
+            android:id="@+id/car_price_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="LKR 9,926,800"
+            android:textColor="@color/green"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.225"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/car_name_6" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Rectangle 7 -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rectangle_7"
+        android:layout_width="150dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rectangle_9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rectangle_5">
+
+        <!-- Car Image -->
+        <ImageView
+            android:id="@+id/car_img_7"
+            android:layout_width="164dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/toyotaaq"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Car Name -->
+        <TextView
+            android:id="@+id/car_name_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/nunitosansbold"
+            android:text="Toyota Aqua"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/car_img_7" />
+
+        <!-- Car Price -->
+        <TextView
+            android:id="@+id/car_price_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="LKR 5,775,000"
+            android:textColor="@color/green"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.225"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/car_name_7" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

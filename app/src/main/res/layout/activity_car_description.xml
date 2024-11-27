@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".CarDescriptionActivity">
+
+    <!-- Main Text: 2019 Toyota 86 -->
+    <TextView
+        android:id="@+id/textMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:text="2019 Toyota 86"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Image: toyotawhite.png -->
+    <ImageView
+        android:id="@+id/imageCar"
+        android:layout_width="395dp"
+        android:layout_height="182dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Toyota 86 Car Image"
+        android:src="@drawable/toyotawhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textMain" />
+
+    <!-- Existing Details Text: Price, Body type, Seats, Fuel type -->
+    <TextView
+        android:id="@+id/textDetails"
+        android:layout_width="350dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:text="Price                      Body type#     Seats    Fuel type"
+        android:textColor="@color/gray"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageCar" />
+
+    <!-- Additional Text: $30,100 to $37,500       Coupe                4           Petrol -->
+    <TextView
+        android:id="@+id/additionalDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:text="LKR 9,926,800       Coupe             4         Petrol"
+        android:textColor="@android:color/white"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textDetails" />
+
+    <!-- Green Ellipse -->
+    <View
+        android:id="@+id/ellipse_1"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="350dp"
+        android:background="@color/green"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Text: Cars available on carsales -->
+    <TextView
+        android:id="@+id/cars_available"
+        android:layout_width="220dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/cars_available_text"
+        android:textAppearance="@style/cars_availa"
+        app:layout_constraintStart_toEndOf="@id/ellipse_1"
+        app:layout_constraintTop_toTopOf="@+id/additionalDetails" />
+
+    <!-- Additional Description -->
+    <TextView
+        android:id="@+id/additionalDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="16dp"
+        android:text="The Toyota 86 2019 is a 4 seat Coupe with a 5-star ANCAP safety rating.\n\nIt has a petrol engine with a fuel economy range from 7.1L/100km to 8.4L/100km, depending on the model badge.\n\nThe storage space in the rear is 237L.\n\nService intervals:\n15,000km/9 months"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/additionalDetails" />
+
+    <Button
+        android:id="@+id/addcartButton"
+        android:layout_width="281dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/green"
+        android:fontFamily="@font/nunitosansbold"
+        android:text="Add to cart"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/additionalDescription" />
+
+
+    <Button
+        android:id="@+id/testdriveButton"
+        android:layout_width="281dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/green"
+        android:fontFamily="@font/nunitosansbold"
+        android:text="Book a test drive"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addcartButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

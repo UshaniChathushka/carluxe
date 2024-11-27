@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".LoginActivty">
+
+    <ImageView
+        android:id="@+id/imageViewLogin"
+        android:layout_width="413dp"
+        android:layout_height="375dp"
+        android:contentDescription="@string/login_image_description"
+        android:src="@drawable/login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/TextViewLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/welcome_back"
+        android:fontFamily="@font/nunitosansregular"
+        android:text="@string/welcome_back"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageViewLogin"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/usernameTextInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TextViewLogin"
+        app:boxBackgroundColor="@color/gray"
+        app:boxStrokeColor="@color/gray"
+        app:hintTextColor="@color/white"> <!-- Set hint text color to white -->
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/usernameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:textColor="@color/white"
+            android:fontFamily="@font/nunitosansregular"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordTextInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/usernameTextInputLayout"
+        app:boxBackgroundColor="@color/gray"
+        app:boxStrokeColor="@color/gray"
+        app:hintTextColor="@color/white"> <!-- Set hint text color to white -->
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textColorHint="@color/white"
+            android:fontFamily="@font/nunitosansregular"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/green"
+        android:text="LOGIN"
+        android:fontFamily="@font/nunitosansbold"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/passwordTextInputLayout" />
+
+    <TextView
+        android:id="@+id/signupTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Don’t have an account?"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/loginButton"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <TextView
+        android:id="@+id/signupText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="signup"
+        android:textColor="@color/green"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/signupTextView"
+        app:layout_constraintStart_toEndOf="@id/signupTextView"
+        app:layout_constraintTop_toTopOf="@id/signupTextView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".HomeActivity">
+
+    <!-- App Bar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="214dp"
+        android:background="@color/graydark"
+        android:elevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <!-- Logo -->
+            <ImageView
+                android:layout_width="127dp"
+                android:layout_height="63dp"
+                android:contentDescription="@string/logo_description"
+                android:src="@drawable/logo" />
+
+        </FrameLayout>
+
+        <!-- Filter Icon -->
+        <ImageView
+            android:id="@+id/filter_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="end|top"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/filter" />
+
+        <!-- You can add other elements like a title or menu items here -->
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Search Bar -->
+    <LinearLayout
+        android:id="@+id/search_bar"
+        android:layout_width="323dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/search_bar_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/app_bar">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/search" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Search your dream car"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <!-- BMW Image -->
+    <ImageView
+        android:id="@+id/bmw_img"
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/bmw"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/search_bar" />
+
+    <!-- Suzuki Image -->
+    <ImageView
+        android:id="@+id/suzuki_img"
+        android:layout_width="71dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginStart="0dp"
+        android:src="@drawable/suzuki"
+        app:layout_constraintStart_toEndOf="@id/bmw_img"
+        app:layout_constraintTop_toBottomOf="@id/search_bar" />
+
+    <!-- Benz Image -->
+    <ImageView
+        android:id="@+id/benz_img"
+        android:layout_width="70dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginStart="0dp"
+        android:src="@drawable/benz"
+        app:layout_constraintStart_toEndOf="@id/suzuki_img"
+        app:layout_constraintTop_toBottomOf="@id/search_bar" />
+
+    <!-- Toyota Image -->
+    <ImageView
+        android:id="@+id/toyota_img"
+        android:layout_width="60dp"
+        android:layout_height="39.42dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/toyota"
+        app:layout_constraintStart_toEndOf="@id/benz_img"
+        app:layout_constraintTop_toBottomOf="@id/search_bar" />
+
+    <!-- Audi Image -->
+    <ImageView
+        android:id="@+id/audi_img"
+        android:layout_width="60dp"
+        android:layout_height="39.42dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/audi"
+        app:layout_constraintStart_toEndOf="@id/toyota_img"
+        app:layout_constraintTop_toBottomOf="@id/search_bar" />
+
+    <!-- Popular Cars Text -->
+
+    <!-- Rectangles for Cars -->
+    <!-- Rectangle 1 -->
+
+    <!-- Rectangle 2 -->
+
+    <!-- Rectangle 3 -->
+
+    <!-- Rectangle 4 -->
+
+    <TextView
+        android:id="@+id/popular_cars_text"
+        android:layout_width="143dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/nunitosansbold"
+        android:text="Popular Cars"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/app_bar"
+        tools:ignore="DuplicateIds" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rectangle_1"
+        android:layout_width="152dp"
+        android:layout_height="176dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rectangle_9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/popular_cars_text">
+
+        <!-- Heart Icon -->
+        <ImageView
+            android:id="@+id/heart_1"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/heart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Car Image -->
+        <ImageView
+            android:id="@+id/toyota_red_img"
+            android:layout_width="164dp"
+            android:layout_height="73dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/toyotared"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Car Name -->
+        <TextView
+            android:id="@+id/car_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/nunitosansbold"
+            android:text="2019 Toyota 86"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toyota_red_img" />
+
+        <!-- Car Price -->
+        <TextView
+            android:id="@+id/car_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="LKR 9,926,800"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.225"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/car_name" />
+
+        <!-- Star Icon -->
+        <ImageView
+            android:id="@+id/star_1"
+            android:layout_width="12dp"
+            android:layout_height="13dp"
+            android:layout_marginStart="107dp"
+            android:layout_marginTop="94dp"
+            android:src="@drawable/star"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/heart_1" />
+
+        <!-- Star Text -->
+        <TextView
+            android:id="@+id/star_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="5.0"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/star_1"
+            app:layout_constraintStart_toEndOf="@id/star_1"
+            app:layout_constraintTop_toTopOf="@id/star_1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rectangle_2"
+        android:layout_width="152dp"
+        android:layout_height="176dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rectangle_9"
+        app:layout_constraintStart_toEndOf="@id/rectangle_1"
+        app:layout_constraintTop_toBottomOf="@id/popular_cars_text">
+
+        <!-- Heart Icon -->
+        <ImageView
+            android:id="@+id/heart_2"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/heart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Car Image -->
+        <ImageView
+            android:id="@+id/bmw_blue_img"
+            android:layout_width="164dp"
+            android:layout_height="73dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/suzukiwagon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Car Name -->
+        <TextView
+            android:id="@+id/car_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/nunitosansbold"
+            android:text="Wagon R FX"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bmw_blue_img" />
+
+        <!-- Car Price -->
+        <TextView
+            android:id="@+id/car_price2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="LKR 5,500,000"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.225"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/car_name2" />
+
+        <!-- Star Icon -->
+        <ImageView
+            android:id="@+id/star_2"
+            android:layout_width="12dp"
+            android:layout_height="13dp"
+            android:layout_marginStart="107dp"
+            android:layout_marginTop="94dp"
+            android:src="@drawable/star"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/heart_2" />
+
+        <!-- Star Text -->
+        <TextView
+            android:id="@+id/star_text2"
+            android:layout_width="38dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="4dp"
+            android:text="4.8"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/star_2"
+            app:layout_constraintTop_toBottomOf="@id/car_price2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rectangle_3"
+        android:layout_width="152dp"
+        android:layout_height="176dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/rectangle_9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rectangle_1">
+
+        <!-- Heart Icon -->
+        <ImageView
+            android:id="@+id/heart_3"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/heart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Car Image -->
+        <ImageView
+            android:id="@+id/benz_black_img"
+            android:layout_width="164dp"
+            android:layout_height="73dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/bmwm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Car Name -->
+        <TextView
+            android:id="@+id/car_name3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/nunitosansbold"
+            android:text="BMW M3"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/benz_black_img" />
+
+        <!-- Car Price -->
+        <TextView
+            android:id="@+id/car_price3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="LKR 23,172,500"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.225"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/car_name3" />
+
+        <!-- Star Icon -->
+        <ImageView
+            android:id="@+id/star_3"
+            android:layout_width="12dp"
+            android:layout_height="13dp"
+            android:layout_marginStart="107dp"
+            android:layout_marginTop="94dp"
+            android:src="@drawable/star"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/heart_3" />
+
+        <!-- Star Text -->
+        <TextView
+            android:id="@+id/star_text3"
+            android:layout_width="39dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="1dp"
+            android:text="4.8"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/star_3"
+            app:layout_constraintTop_toBottomOf="@id/car_price3"
+            app:layout_constraintTop_toTopOf="@id/star_3"
+            app:layout_constraintVertical_bias="1.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rectangle_4"
+        android:layout_width="152dp"
+        android:layout_height="176dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/rectangle_9"
+        app:layout_constraintStart_toEndOf="@id/rectangle_3"
+        app:layout_constraintTop_toBottomOf="@id/rectangle_2">
+
+        <!-- Heart Icon -->
+        <ImageView
+            android:id="@+id/heart_4"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/heart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Car Image -->
+        <ImageView
+            android:id="@+id/audi_white_img"
+            android:layout_width="164dp"
+            android:layout_height="73dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/hondacivic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Car Name -->
+        <TextView
+            android:id="@+id/car_name4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/nunitosansbold"
+            android:text="Honda Civic"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/audi_white_img" />
+
+        <!-- Car Price -->
+        <TextView
+            android:id="@+id/car_price4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="LKR 7,101,250"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.225"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/car_name4" />
+
+        <!-- Star Icon -->
+        <ImageView
+            android:id="@+id/star_4"
+            android:layout_width="12dp"
+            android:layout_height="13dp"
+            android:layout_marginStart="107dp"
+            android:layout_marginTop="94dp"
+            android:src="@drawable/star"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/heart_4" />
+
+        <!-- Star Text -->
+        <TextView
+            android:id="@+id/star_text4"
+            android:layout_width="38dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="4dp"
+            android:text="4.6"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/star_4"
+            app:layout_constraintTop_toBottomOf="@id/car_price4" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        style="@style/CustomBottomNavigationView"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@color/green"
+        app:itemIconTint="@drawable/bottom_nav_color"
+        app:itemTextColor="@drawable/bottom_nav_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+    <TextView
+        android:id="@+id/app_bar_title"
+        android:layout_width="443dp"
+        android:layout_height="16dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="166dp"
+        android:text="   BMW       SUZUKI        BENZ         TOYOTA         AUDI"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/app_bar"
+        app:layout_constraintTop_toTopOf="@+id/app_bar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
